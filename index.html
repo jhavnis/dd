@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAPE&DECOR - Fashion Meets Interior</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #EDE6E3; /* Soft neutral background */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        h2, h3, h4 {
+            font-family: 'Playfair Display', serif; /* BODONI Poster Alternative */
+            color: #D2042D; /* Heading color */
+        }
+        .decorative-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        .element-img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden">
+
+<!-- Decorative Elements -->
+<div class="decorative-circle w-72 h-72 bg-pink-200 top-[-5rem] left-[-5rem]"></div>
+<div class="decorative-circle w-96 h-96 bg-pink-300 bottom-[-10rem] right-[-10rem]"></div>
+<div class="decorative-circle w-40 h-40 bg-pink-100 top-1/2 left-[-5rem]"></div>
+
+<!-- Header -->
+<header class="bg-white shadow-md z-10 relative">
+    <div class="container mx-auto flex justify-center items-center py-4 px-6">
+        <div class="logo">DRAPE&amp;DECOR</div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="py-20 relative">
+    <div class="container mx-auto">
+        <h2 class="text-5xl font-extrabold mb-4">Where Fashion Meets Interiors</h2>
+        <p class="text-gray-800 text-xl mb-6">Experience curated fashion-inspired home décor and exclusive wearable collections.</p>
+        <a href="#products" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition">Explore Collections</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 relative z-10">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-6">About DRAPE&amp;DECOR</h3>
+        <p class="text-gray-800 max-w-2xl mx-auto">DRAPE&amp;DECOR is a student-led startup blending fashion design and interior aesthetics. We craft unique, fashion-inspired home décor and limited edition wearable collections, offering immersive lifestyle experiences that are visually stunning and sustainable.</p>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-20">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-12">Our Collections</h3>
+        <div class="grid md:grid-cols-3 gap-8 justify-items-center">
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition relative">
+                <img src="a1.jpg" alt="Cushion" class="rounded mb-4 mx-auto">
+                <h4 class="text-xl font-semibold mb-2">Fashion-Inspired Cushions</h4>
+                <p class="text-gray-800">Handmade cushions with patterns inspired by seasonal fashion trends.</p>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/892/892781.png" alt="Scarf Icon" class="element-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4461/4461329.png" alt="Couch Icon" class="element-img">
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition relative">
+                <img src="a2.jpg" alt="Scarf" class="rounded mb-4 mx-auto">
+                <h4 class="text-xl font-semibold mb-2">Limited Edition Scarves</h4>
+                <p class="text-gray-800">Scarves matching our home décor palettes for a cohesive style.</p>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/892/892781.png" alt="Scarf Icon" class="element-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922650.png" alt="Lamp Icon" class="element-img">
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition relative">
+                <img src="a3.jpg" alt="Decor" class="rounded mb-4 mx-auto">
+                <h4 class="text-xl font-semibold mb-2">Home Décor Pieces</h4>
+                <p class="text-gray-800">Handcrafted décor items that blend fashion prints with interior design.</p>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922650.png" alt="Lamp Icon" class="element-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4461/4461329.png" alt="Couch Icon" class="element-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pop-Up Events Section -->
+<section id="popups" class="py-20 bg-red-50 relative">
+    <div class="container mx-auto">
+       <img src="a4.jpg" alt="Pop-up Experiences" class="rounded mb-4 mx-auto">
+        <h3 class="text-3xl font-bold mb-12">Pop-Up Experiences</h3>
+        <p class="text-gray-800 max-w-2xl mx-auto mb-6">Join our immersive pop-up spaces where fashion meets interiors. Try on collections, explore décor setups, and capture Instagram-worthy moments.</p>
+        <a href="#contact" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition">Stay Updated on Events</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 relative z-10">
+    <div class="container mx-auto">
+        <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+        <p class="text-gray-800 mb-6">For collaborations, pop-up inquiries, or custom orders, reach out to us.</p>
+        <form class="max-w-xl mx-auto space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded focus:outline-red-500">
+            <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded focus:outline-red-500">
+            <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded h-32 focus:outline-red-500"></textarea>
+            <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-6 shadow-inner relative z-10">
+    <div class="container mx-auto text-center text-gray-800">
+        &copy; 2025 DRAPE&amp;DECOR. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
+
